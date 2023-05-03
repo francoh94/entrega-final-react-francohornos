@@ -1,6 +1,6 @@
 import './CartWidget.css'
 const CartWidget = () => {
-    const imgcarrito = "../../../public/botón-rojo-del-carro-de-la-compra-icono-simple-aislado-en-el-fondo-blanco-almacene-carretilla-con-las-ruedas-108518705-removebg-preview-removebg-preview.png"
+    const imgcarrito = "/imagenes/botón-rojo-del-carro-de-la-compra-icono-simple-aislado-en-el-fondo-blanco-almacene-carretilla-con-las-ruedas-108518705-removebg-preview-removebg-preview.png"
     
   return (
     <div className='carrito'>
