@@ -9,7 +9,7 @@ function NavBar() {
 return (
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
-        <img src='../../../src/assets/dragon-logo-5196B4EDA3-seeklogo.com.png' width={50} height={50} alt="img" />
+        <img src='../../../public/dragon-logo-5196B4EDA3-seeklogo.com.png' width={50} height={50} alt="img" />
         <Navbar.Brand id='dragon' href="#home">Dragon Store</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
