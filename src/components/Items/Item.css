@@ -1,0 +1,23 @@
+.cardproducto{
+    background-color: rgb(43, 40, 40);
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgproducto{
+    width: 150px;
+    object-fit: contain;
+    padding-bottom: 20px;
+    height: 300px;
+}
+.ver{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
