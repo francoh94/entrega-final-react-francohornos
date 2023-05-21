@@ -22,7 +22,7 @@ const ItemDetail = ({id, nombre,descripcion, precio, img, }) => {
           <> 
           Descripción: {descripcion}
           <br />
-          <strong > Precio: ${precio}</strong></>
+          <strong className="precio"> Precio: ${precio}</strong></>
           <br />
           <>ID:{id}</>
         </Card.Text>

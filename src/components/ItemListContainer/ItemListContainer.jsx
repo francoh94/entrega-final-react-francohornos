@@ -19,7 +19,6 @@ const {idcat} = useParams();
     
   return (
     <>
-    <h2 className='titulo'>{greeting}</h2>
     <ItemList productos= {store}/>
     </>
   )

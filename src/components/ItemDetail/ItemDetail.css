@@ -1,4 +1,7 @@
 .cardproducto{
     height: max-content;
-
+}
+.precio{
+    color: red;
+    font-size: x-large;
 }
