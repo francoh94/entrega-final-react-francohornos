@@ -24,7 +24,7 @@ const Item = ({id, nombre, precio, img, }) => {
           <>ID:{id}</>
         </Card.Text>
       </Card.Body>
-      <Link className='ver' to={ `/item/${id} `}>Ver Detalles</Link>
+      <Link className='ver' to={ `/item/ ${id} `}>Ver Detalles</Link>
     </Card>
   ))}
   </>

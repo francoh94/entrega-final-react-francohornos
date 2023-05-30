@@ -1,9 +1,22 @@
 import  "./ItemDetail.css"
 import Card  from 'react-bootstrap/Card'
-import  Button  from 'react-bootstrap/Button';
-import Hooks from "../Hooks/hooks";
+import { useState, useContext } from "react";
+import { Link } from "react-router-dom"
+import { ItemCount } from "../ItemCount/ItemCount";
+import { CarritoContext } from "../../context/CarritoContext";
 
-const ItemDetail = ({id, nombre,descripcion, precio, img, }) => {
+
+const ItemDetail = ({id, nombre,descripcion, precio, img,stock }) => {
+  const [agregarCantidad, setAgregarCantidad]= useState(0);
+  
+  const {agregarProducto} = useContext (CarritoContext);
+
+  const manejadorCantidad = (cantidad) => {
+    setAgregarCantidad(cantidad);
+    
+    const item = {id, nombre, precio};
+    agregarProducto (item, cantidad)
+  }
   return (
     <>
     {[
@@ -27,7 +40,9 @@ const ItemDetail = ({id, nombre,descripcion, precio, img, }) => {
           <>ID:{id}</>
         </Card.Text>
       </Card.Body>
-      <Hooks className="text-withe"/>
+      {
+        agregarCantidad > 0 ? (<Link to="/cart" >Terminar compra</Link>) : (<ItemCount className="text-withe" inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/>)
+      }
     </Card>
   ))}
   </>

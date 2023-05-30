@@ -4,7 +4,7 @@ import ItemList from '../ItemList/itemList'
 import { getstore, getcategoria } from '../../../asyncmock'
 import { useParams } from 'react-router-dom'
 
-const ItemListConteiner = ({greeting}) => {
+const ItemListConteiner = () => {
   const [store, setstore] = useState([]);
 
 const {idcat} = useParams();
