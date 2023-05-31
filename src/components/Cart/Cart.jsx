@@ -4,8 +4,6 @@ import { useContext } from "react";
 import CartItem from "../CartItem/CartItem";
 import { Button } from "bootstrap";
 
-import React from 'react'
-
 const Cart = () => {
   const {carrito, vaciarCarrito, total, cantidadTotal} = useContext(CarritoContext)
   if (cantidadTotal === 0){
@@ -18,7 +16,7 @@ const Cart = () => {
   }
   return(
     <div>
-        {Carrito.map(producto=> <CartItem key={producto.id} {...producto}/>)}
+        {carrito.map(producto=> <CartItem key={producto.id} {...producto}/>)}
         <h3> Total: ${total}</h3>
         <h3>Cantidad total:{cantidadTotal}</h3>
         <Button onClick={()=>vaciarCarrito} >Vaciar carrito</Button>

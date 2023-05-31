@@ -14,14 +14,14 @@ return (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
-            <Nav.Link href= {`/categoria/pc`}>Pc</Nav.Link>
+            <Nav.Link as={Link} to= {`/categoria/pc`}>Pc</Nav.Link>
             <NavDropdown title="Mas" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/categoria/componentes">Componentes</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/Perifericos">
+            <NavDropdown.Item as={Link} to="/categoria/componentes">Componentes</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/categoria/Perifericos">
                 Perifericos
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
+            <NavDropdown.Item as={Link} to="#action/3.4">
                 Contactanos
             </NavDropdown.Item>
             </NavDropdown>

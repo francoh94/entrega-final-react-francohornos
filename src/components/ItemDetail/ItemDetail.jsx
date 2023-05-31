@@ -9,13 +9,13 @@ import { CarritoContext } from "../../context/CarritoContext";
 const ItemDetail = ({id, nombre,descripcion, precio, img,stock }) => {
   const [agregarCantidad, setAgregarCantidad]= useState(0);
   
-  const {agregarProducto} = useContext (CarritoContext);
+  const {agregarProductos} = useContext (CarritoContext);
 
   const manejadorCantidad = (cantidad) => {
     setAgregarCantidad(cantidad);
     
     const item = {id, nombre, precio};
-    agregarProducto (item, cantidad)
+    agregarProductos (item, cantidad)
   }
   return (
     <>

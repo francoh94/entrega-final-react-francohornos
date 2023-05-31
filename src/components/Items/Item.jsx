@@ -1,6 +1,6 @@
 import './Item.css'
 import Card  from 'react-bootstrap/Card'
-import { Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 const Item = ({id, nombre, precio, img, }) => {
@@ -24,7 +24,7 @@ const Item = ({id, nombre, precio, img, }) => {
           <>ID:{id}</>
         </Card.Text>
       </Card.Body>
-      <Link className='ver' to={ `/item/ ${id} `}>Ver Detalles</Link>
+      <Link className='ver' to={`/item/${id}`}>Ver Detalles</Link>
     </Card>
   ))}
   </>
