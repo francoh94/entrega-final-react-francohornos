@@ -2,3 +2,9 @@
     display: flex;
     color: white;
 }
+.cant{
+    color: red;
+}
+.linkcarrito{
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+.cart{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    margin: 100px;
+    color: white;
+    padding: 20px;
+}
+.check{
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 20%;
+    padding: 2px;
+    margin: 20px;
+}
+.check:hover{
+    color: red;
+    background-color: white;
+}
+.total{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}

@@ -5,4 +5,13 @@
     color: red;
     font-size: x-large;
 }
-
+.tc{
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    color: inherit;
+}
+.tc:hover{
+    color: red;
+    background-color: white;
+}

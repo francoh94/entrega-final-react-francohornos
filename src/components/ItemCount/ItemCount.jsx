@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Button } from 'react-bootstrap'
+import "./ItemCount.css"
 
 export const ItemCount = ({stock, inicial, funcionAgregar}) => {
     const [contador, setContador] = useState(inicial);

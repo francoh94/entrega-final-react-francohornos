@@ -21,3 +21,7 @@
     border-radius: 5px;
     text-decoration: none;
 }
+.ver:hover{
+    color: red;
+    background-color: white;
+}

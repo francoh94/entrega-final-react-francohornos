@@ -4,13 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget'
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
 return (
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
-        <Link to={"/"} ><img src='/imagenes/dragon-logo-5196B4EDA3-seeklogo.com.png' width={50} height={50} alt="img" /></Link>        <Navbar.Brand id='dragon' href="/">Dragon Store</Navbar.Brand>
+        <Link to={"/"} ><img src='/imagenes/dragon-logo-5196B4EDA3-seeklogo.com.png' width={50} height={50} alt="img" /></Link>     <Link to={"/"} className='linkdragon'><Navbar.Brand id='dragon'>Dragon Store</Navbar.Brand></Link>  
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
