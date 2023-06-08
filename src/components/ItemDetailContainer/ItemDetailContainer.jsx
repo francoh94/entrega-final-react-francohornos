@@ -5,25 +5,25 @@ import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
-    const [producto, setProducto] = useState(null)
+  const [producto, setProducto] = useState(null);
 
-    const {idItem} = useParams();
+  const { idItem } = useParams();
 
-    useEffect(()=>{
-    const nuevodoc = doc(db, "inventario",idItem )
-    getDoc ( nuevodoc)
-    .then(res=> {
-      const data = res.data();
-      const nuevoProducto = {id: res.id, ...data}
-      setProducto(nuevoProducto);
-    })
-    .catch(error => console.log(error))
-    },[idItem])
+  useEffect(() => {
+    const nuevodoc = doc(db, "inventario", idItem);
+    getDoc(nuevodoc)
+      .then((res) => {
+        const data = res.data();
+        const nuevoProducto = { id: res.id, ...data };
+        setProducto(nuevoProducto);
+      })
+      .catch((error) => console.log(error));
+  }, [idItem]);
   return (
     <>
-    <ItemDetail {...producto}/>
+      <ItemDetail {...producto} />
     </>
-  )
-}
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
